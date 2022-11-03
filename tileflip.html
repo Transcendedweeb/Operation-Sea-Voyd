@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tileflip.css">
+    <script src="javascript/tileflip.js" defer></script>
+    <title>Tileflip</title>
+</head>
+<body>
+    <figure><img src="img/screen.png" alt="central computer screen" class="bg_img2"></figure>
+
+    <section id="js--pc" class="computer">
+        <section class="computerscreen2" id="computerscreen">
+            
+        </section>
+    </section>
+
+    <section id="js--btn" class="gamebuttons">
+        <button class="checkbutton" id="checkbtn" onclick="gamecheck()">Check</button>
+        <button class="continuebutton" id="submitbtn" onclick="victory()">Hack</button>
+        <button id="js--question" class="question" onclick="sceneHandler(2)">?</button>
+    </section>
+
+    <section id="js--scene2" class="scene2">
+        <figure><img src="img/screen.png" alt="central computer screen" class="bg_img2"></figure>
+        <figure class="text_blackscreen"></figure>
+        <figure><img src="img/mugshot.png" alt="mugshot" class="mugshot"></figure>
+        <div class="text_square_pos">
+            <figure class="text_square"></figure>
+            <p class="text_square_text">
+                It's a tileflipper. I need to flip all tiles to green. The "Check" button will check if all tiles are green. 
+                If the input is correct I can hack the computer by pressing the "Hack" button.
+            </p>
+      
+            <button class="text_button" onclick="sceneHandler(1)">NEXT</button>
+        </div>
+    </section>
+
+    <div class="progress_bar">
+        <figure class="progress bar8"></figure>
+        <p class="progress_text">90%</p>
+    </div>
+    <p data-js="timer" class="timer_text_after"></p>
+</body>
+</html>

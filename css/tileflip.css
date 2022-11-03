@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+}
+
+.bg_img2{
+    position: fixed;
+    height: 100%;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: fill;
+    z-index: -1;
+}
+
+.bg_img2{
+    position: fixed;
+    height: 100%;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: fill;
+}
+
+.text_blackscreen{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 85%;
+    top: 0;
+    left: 0;
+}
+
+.mugshot{
+    position: fixed;
+    height: auto;
+    width: 20%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text_square{
+    display: block;
+    border: solid 5px black;
+}
+
+.text_square_pos{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 65%;
+    left: 0%;
+    background-color: white;
+    object-fit: cover;
+}
+
+.text_square_text{
+    position: fixed;
+    font-size: 3vh;
+    padding-left: 10px;
+}
+
+.text_button{
+    position: fixed;
+    font-size: 2vh;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5vh;
+    padding-right: 20vh;
+    padding-left: 20vh;
+    background-color: grey;
+    color: rgb(0, 0, 0);
+    border: solid 2px black;
+}
+
+.computer {
+    margin-top: 10%;
+    width: 40rem;
+    height: 40rem;
+}
+
+.button {
+    width: 5rem;
+    height: 5rem;
+    margin: 5% 7%;
+    background-color: aliceblue;
+    border: 0.2rem solid black;
+    color: white;
+    font-size: 120%;
+}
+
+.even {
+    background-color: #38ff31;
+    color: black;
+}
+.odd {
+    background-color: rgb(201, 19, 19);
+}
+
+.gamebuttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0.3rem;
+    gap: 2rem;
+}
+
+.checkbutton {
+    width: 8rem;
+    height: 4rem;
+    margin: 0rem 1rem;
+}
+
+.continuebutton {
+    width: 8rem;
+    height: 4rem;
+    margin: 0rem 1rem;
+
+}
+
+.question{
+    width: 8rem;
+    height: 4rem;
+    margin: 0rem 1rem;
+    font-size: 3vh;
+}
+
+.timer_text_after{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: black;
+    color: green;
+    font-size: 5vh;
+    padding: 5px;
+    border: solid 2px white;
+}
+
+.scene2{
+    display: none;
+}
+
+.progress_bar{
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    top: 0%;
+    right: 0%;
+    width: 50%;
+    height: auto;
+    border: solid black 1px;
+    background-color: white;
+}
+
+.progress{
+    background-color: green;
+    height: 1vh;
+    width: 0%;
+    border: solid black 1px;
+    margin: 1vh;   
+}
+
+.progress_text{
+    font-size: 3vh;
+    color: green;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.bar8{
+    width: 90%;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        flex-direction: column;
+    }
+
+    .computer {
+        width: 20rem;
+        height: 20rem;
+        margin-left: 34%;
+        margin-top: 4rem;
+    }
+
+    .button {
+        width: 4rem;
+        height: 4rem;
+        margin: 15px;
+        background-color: aliceblue;
+        border: 0.2rem solid black;
+        color: white;
+        font-size: 120%;
+    }
+
+    .even {
+        background-color: #38ff31;
+        color: black;
+    }
+    .odd {
+        background-color: rgb(201, 19, 19);
+    }
+
+    .gamebuttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.3rem;
+        flex-direction: row;
+        gap: 0rem;
+    }
+
+    .checkbutton {
+        width: 8rem;
+        height: 4rem;
+        margin: 0rem 1rem;
+    }
+
+    .continuebutton {
+        width: 8rem;
+        height: 4rem;
+        margin: 0rem 1rem;
+
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .computer {
+        width: 20rem;
+        height: 20rem;
+        margin-left: 30%;
+        margin-top: 4rem;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .text_square_pos{
+        top: 45%;
+    }
+
+    .mugshot{
+        width: 35%;
+        top: 25%;
+    }
+
+    .text_button{
+        padding-right: 10vh;
+        padding-left: 10vh;
+    }
+
+    .computer {
+        width: 20rem;
+        height: 20rem;
+        margin-left: 25%;
+    }
+
+    .button {
+        width: 3rem;
+        height: 3rem;
+        margin: 25px;
+        background-color: aliceblue;
+        border: 0.2rem solid black;
+        color: white;
+        font-size: 120%;
+    }
+
+    .even {
+        background-color: #38ff31;
+        color: black;
+    }
+    .odd {
+        background-color: rgb(201, 19, 19);
+    }
+
+    .gamebuttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.3rem;
+    }
+
+    .checkbutton {
+        width: 8rem;
+        height: 4rem;
+        margin: 0rem 1rem;
+    }
+
+    .continuebutton {
+        width: 8rem;
+        height: 4rem;
+        margin: 0rem 1rem;
+
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .computer {
+        width: 20rem;
+        height: 20rem;
+        margin-left: 20%;
+    }
+
+    .button {
+        width: 3rem;
+        height: 3rem;
+        margin: 25px;
+        background-color: aliceblue;
+        border: 0.2rem solid black;
+        color: white;
+        font-size: 120%;
+    }
+
+    .even {
+        background-color: #38ff31;
+        color: black;
+    }
+    .odd {
+        background-color: rgb(201, 19, 19);
+    }
+
+    .gamebuttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.3rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .mugshot{
+        width: 50%;
+        top: 30%;
+    }
+    
+    .computer {
+        width: 25rem;
+        height: 20rem;
+        margin-left: 11%;
+    }
+    
+    .button {
+        width: 4rem;
+        height: 4rem;
+        margin: 20px;
+        background-color: aliceblue;
+        border: 0.2rem solid black;
+        color: white;
+        font-size: 120%;
+    }
+
+    .even {
+        background-color: #38ff31;
+        color: black;
+    }
+    .odd {
+        background-color: rgb(201, 19, 19);
+    }
+
+    .gamebuttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.3rem;
+    }
+
+    .checkbutton {
+        width: 8rem;
+        height: 4rem;
+        margin: 0rem 1rem;
+    }
+
+    .continuebutton {
+        width: 8rem;
+        height: 4rem;
+        margin: 0rem 1rem;
+
+    }
+
+}

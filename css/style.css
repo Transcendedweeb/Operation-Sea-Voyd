@@ -1,0 +1,621 @@
+/* Algemeen */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    background-color: black;
+    overflow: hidden;
+}
+
+.bg_img2{
+    position: fixed;
+    height: 100%;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: fill;
+}
+
+.text_blackscreen{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 85%;
+    top: 0;
+    left: 0;
+}
+
+.mugshot{
+    position: fixed;
+    height: auto;
+    width: 20%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text_square{
+    display: block;
+    border: solid 5px black;
+}
+
+.text_square_pos{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 65%;
+    background-color: white;
+    object-fit: cover;
+}
+
+.text_square_text{
+    position: fixed;
+    font-size: 3vh;
+    padding-left: 10px;
+}
+
+.text_button{
+    position: fixed;
+    font-size: 2vh;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5vh;
+    padding-right: 20vh;
+    padding-left: 20vh;
+    background-color: grey;
+    color: rgb(0, 0, 0);
+    border: solid 2px black;
+}
+
+.arrow_left{
+    position: fixed;
+    height: auto;
+    width: 15%;
+    top: 75%;
+    margin-left: 10%;
+}
+
+.arrow_forward{
+    position: fixed;
+    height: auto;
+    width: 5%;
+    top: 80%;
+    left: 60%;
+}
+
+.door_text{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0%;
+    font-size: 5vh;
+    text-shadow: 0 0 20px #ffffff;
+    animation: complete_fader 8s ease-out;
+}
+
+.timer_text_first{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: black;
+    color: green;
+    font-size: 5vh;
+    padding: 5px;
+    border: solid 2px white;
+    animation: time 5s ease-out;
+}
+
+.timer_text_after{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: black;
+    color: green;
+    font-size: 5vh;
+    padding: 5px;
+    border: solid 2px white;
+}
+
+.progress_bar{
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    top: 0%;
+    right: 0%;
+    width: 50%;
+    height: auto;
+    border: solid black 1px;
+    background-color: white;
+}
+
+.progress{
+    background-color: green;
+    height: 1vh;
+    border: solid black 1px;
+    margin: 1vh;   
+}
+
+.progress_text{
+    font-size: 3vh;
+    color: green;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.bar1{
+    width: 0%;
+}
+
+.bar2{
+    width: 12%;
+}
+/* --------------------------------------------------------- */
+
+/* hoofdmenu */
+.intro h1{
+    position: fixed;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: white;
+    height: 100%;
+    font-size: 5vh;
+    text-decoration: underline;
+    text-shadow: 0 0 5px #ffffff;
+    animation: complete_fader 7s ease-out;
+}
+
+.intro h2{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    color: white;
+    text-shadow: 0 0 5px #ffffff;
+    transform: translate(-50%, -50%);
+    animation: complete_fader 7s ease-out;
+}
+
+.menu{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.bg_img{
+    position: fixed;
+    height: 100%;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: intro_fade_in 8s ease-out;
+    object-fit: fill;
+}
+
+.menu h1{
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 225, 255);
+    font-size: 5vh;
+    text-shadow: 0 0 5px #ffffff;
+    animation: fade_in 3s ease-out;
+}
+
+.menu button{
+    position: fixed;
+    font-size: 2vh;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1vh;
+    padding-right: 10vh;
+    padding-left: 10vh;
+    background-color: rgb(0, 225, 255);
+    color: rgb(0, 0, 0);
+    border: solid 2px black;
+    animation: intro_fade_in 8s ease-out;
+}
+
+.move_top{
+    opacity: 0%;
+    animation: fade_out 3s ease-out;
+}
+/* --------------------------------------------------------- */
+
+/* brieving */
+.brieving{
+    display: none;
+}
+
+.locationInfo{
+    margin-top: 10%;
+    margin-left: 39%;
+}
+
+.locationInfo p{
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+    font-size: 2.5vh;
+    padding-bottom: 10px;
+    text-shadow: 0 0 5px #ffffff;
+}
+
+.bg_img3{
+    position: fixed;
+    height: 100%;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: fill;
+}
+
+.locationInfo .locNone{
+    display: none;
+}
+
+.locationInfo .locAnimation{
+    animation: typing 3s linear;
+}
+
+.brieving p{
+    color: white;
+    font-size: 36px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.brieving_note{
+    position: fixed;
+    height: 75%;
+    width: auto;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+}
+
+.brieving_button{
+    position: fixed;
+    font-size: 2vh;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1vh;
+    padding-right: 15vh;
+    padding-left: 15vh;
+    background-color: grey;
+    color: white;
+    border: solid 2px black;
+}
+
+.brieving_text{
+    display: none;
+}
+
+.gas_scene{
+    display: none;
+}
+
+.obj__ventilation{
+    position: absolute;
+    top: 31.3%;
+    left: 22%;
+    height: auto;
+    width: 15%;
+    box-shadow: 0 0 30px #FF0000;
+}
+
+.move_vent_scene{
+    display: none;
+}
+
+.door_vent_scene{
+    display: none;
+}
+
+.infoRoom_reactor{
+    display: none;
+}
+/* --------------------------------------------------------- */
+@media only screen and (max-width:1700px){
+    .obj__ventilation{
+        left: 20%;
+    }
+}
+
+@media only screen and (max-width:1500px){
+    .obj__ventilation{
+        top: 25%;
+        left: 15%;
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width:1400px){
+    .bg_img2{
+        position: fixed;
+        height: auto;
+        height: 100%;
+        top: 0%;
+        left: -10%;
+        transform: translate(0%, 0%);
+    }
+
+    .obj__ventilation{
+        top: 25%;
+        left: 18%;
+        width: 18%;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .bg_img2{
+        position: fixed;
+        height: auto;
+        height: 100%;
+        top: 0%;
+        left: -10%;
+        transform: translate(0%, 0%);
+    }
+
+    .obj__ventilation{
+        top: 28%;
+        left: 25%;
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    /* algemeen */ 
+    .arrow_left{
+        width: 40%;
+        top: 80%;
+        margin-left: 2%;
+    }
+
+    .arrow_forward{
+        width: 11%;
+    }
+    /* --------------------------------------------------------- */
+
+    /* brieving */
+    .bg_img2{
+        position: fixed;
+        height: auto;
+        width: 250%;
+        top: 10%;
+        left: -30%;
+        transform: translate(0%, 0%);
+    }
+
+    .obj__ventilation{
+        top: 40%;
+        left: 20%;
+        width: 32%;
+    }
+
+    .bg_img3{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /* --------------------------------------------------------- */
+}
+
+@media only screen and (max-width:800px){
+    .bg_img3{
+        top: 50%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+    }
+
+    .menu h1{
+        font-size: 4vh;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:600px){
+    /* algemeen */ 
+    .text_square_pos{
+        top: 45%;
+    }
+
+    .mugshot{
+        width: 35%;
+        top: 25%;
+    }
+
+    .text_button{
+        padding-right: 10vh;
+        padding-left: 10vh;
+    }
+
+    .arrow_left{
+        width: 45%;
+        top: 83%;
+        margin-left: 2%;
+    }
+
+    .arrow_forward{
+        width: 20%;
+        top: 80%;
+        left: 40%;
+    }
+
+    .door_text{
+        font-size: 30px;
+    }
+    /* --------------------------------------------------------- */
+
+    /* hoofdmenu */
+    .locationInfo{
+        margin-left: 10%;
+    }
+
+    .menu h1{
+        font-size: 4vh;
+        text-align: center;
+    }
+    /* --------------------------------------------------------- */
+
+    /* brieving */
+    .brieving_note{
+        height: 55%;
+    }
+
+    .bg_img2{
+        position: fixed;
+        height: auto;
+        width: 300%;
+        top: 10%;
+        left: -30%;
+        transform: translate(0%, 0%);
+        animation: intro_fade_in 0s ease-out;
+        object-fit: cover;
+    }
+
+    .obj__ventilation{
+        top: 40%;
+        left: 30%;
+        width: 45%;
+    }
+
+    .door_vent_scene .bg_img2{
+        position: fixed;
+        height: 100%;
+        width: auto;
+        top: 50%;
+        left: 0%;
+        transform: translate(-50%, -50%);
+        object-fit: fill;
+    }
+
+    .bg_img3{
+        top: 50%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+    }
+    /* --------------------------------------------------------- */
+}
+
+@media only screen and (max-width:500px){
+    /* brieving */
+    .obj__ventilation{
+        top: 31%;
+    }
+    /* --------------------------------------------------------- */
+
+    .menu h1{
+        font-size: 3vh;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:400px){
+    /* algemeen */
+    .mugshot{
+        width: 50%;
+        top: 30%;
+    }
+
+    .arrow_left{
+        width: 45%;
+        margin-left: 2%;
+    }
+
+    .door_text{
+        font-size: 3vh;
+    }
+    /* --------------------------------------------------------- */
+
+    /* brieving */
+    .bg_img3{
+        top: 50%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+    }
+    /* --------------------------------------------------------- */
+}
+
+/* Animatie go BRRRRRRRRRRRRRRRR */
+@keyframes complete_fader{
+	0%{
+		opacity: 0%;
+	}
+    10%{
+        opacity: 0%;
+    }
+	55%{
+		opacity: 100%;
+	}
+    100%{
+        opacity: 0%;
+    }
+}
+
+@keyframes fade_in {
+    0%{
+		opacity: 0%;
+	}
+	100%{
+		opacity: 100%;
+	}
+}
+
+@keyframes intro_fade_in {
+    0%{
+		opacity: 0%;
+	}
+
+    30%{
+		opacity: 0%;
+	}
+
+	100%{
+		opacity: 100%;
+	}
+}
+
+@keyframes fade_out {
+    0%{
+		opacity: 100%;
+	}
+	100%{
+		opacity: 0%;
+	}
+}
+
+@keyframes typing{
+    from {
+      width: 0;
+    }
+    to {
+      width: 320px;
+    }
+}
+
+@keyframes time{
+    0%{
+        font-size: 15vh;
+    }
+    33%{
+        font-size: 15vh;
+    }
+    100%{
+        font-size: 5vh;
+    }
+}
+
+/* --------------------------------------------------------- */

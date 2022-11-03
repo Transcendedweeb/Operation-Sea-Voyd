@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Room</title>
+    <link rel="stylesheet" href="css/reactor.css">
+    <script src="javascript/central.js" defer></script>
+</head>
+<body>
+    <section id="js--scene1" class="scene1">
+        <figure><img src="img/bg_reactorDoor2.png" alt="reactor door" class="bg_img3"></figure>
+        <figure class="text_blackscreen"></figure>
+        <figure><img src="img/mugshot.png" alt="mugshot" class="mugshot"></figure>
+        <div class="text_square_pos">
+            <figure class="text_square"></figure>
+            <p class="text_square_text">
+                That’s it, I can get through now.
+            </p>
+
+            <button class="text_button" onclick="flowHandler(1)">NEXT</button>
+        </div>
+    </section>
+
+    <section id="js--scene2" class="scene2">
+        <figure><img src="img/bg_reactorDoor2.png" id="js--reactor_door" alt="reactor door" class="bg_img3 fade_out"></figure>
+    </section>
+
+    <section class="scene3" id="js--scene3">
+        <p class="door_text">Central</p>
+    </section>
+
+    <section id="js--scene4" class="scene4">
+        <figure><img src="img/shoot-out/central.png" alt="central room" class="bg_img2"></figure>
+        <figure class="text_blackscreen"></figure>
+        <figure><img src="img/mugshot2.png" alt="mugshot sovjet" class="mugshot"></figure>
+        <div class="text_square_pos">
+            <figure class="text_square"></figure>
+            <p class="text_square_text">
+                Остановись прямо там!!!! (stop right there!!!!)
+            </p>
+
+            <button class="text_button" onclick="flowHandler(1)">NEXT</button>
+        </div>
+    </section>
+
+    <section id="js--scene5" class="scene5">
+        <figure><img src="img/shoot-out/central.png" alt="central room" class="bg_img2"></figure>
+        <figure class="text_blackscreen"></figure>
+        <figure><img src="img/mugshot.png" alt="mugshot" class="mugshot"></figure>
+        <div class="text_square_pos">
+            <figure class="text_square"></figure>
+            <p class="text_square_text">
+                There goes my element of surprise. I need to take cover!
+            </p>
+
+            <button class="text_button" onclick="flowHandler(1)">NEXT</button>
+        </div>
+    </section>
+
+    <section id="js--scene6" class="scene6">
+        <figure><img src="img/shoot-out/central.png" alt="central room" class="bg_img2"></figure>
+        <figure class="eff_blood" id="js--blood"></figure>
+    </section>
+
+    <section id="js--scene7" class="scene7">
+        <figure><img src="img/shoot-out/central.png" alt="central room" class="bg_img2"></figure>
+        <figure class="text_blackscreen"></figure>
+        <figure><img src="img/mugshot.png" alt="mugshot" class="mugshot"></figure>
+        <div class="text_square_pos">
+            <figure class="text_square"></figure>
+            <p id="js--text_block_2" class="text_square_text">
+                That was a close one!
+            </p>
+
+            <button class="text_button" onclick="flowHandler(1)">NEXT</button>
+        </div>
+    </section>
+</body>
+</html>

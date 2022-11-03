@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer</title>
+    <link rel="stylesheet" href="css/computer.css">
+    <script src="javascript/computer.js" defer></script>
+</head>
+<body>
+    <section id="js--scene1" class="scene1">
+        <figure><img src="img/shoot-out/central.png" alt="central room" class="bg_img2"></figure>
+        <figure class="text_blackscreen"></figure>
+        <figure><img src="img/mugshot.png" alt="mugshot" class="mugshot"></figure>
+        <div class="text_square_pos">
+            <figure class="text_square"></figure>
+            <p class="text_square_text">
+                That was the last one, I need to find and access the main computer. Only then I can shut down the launch of the missiles.
+            </p>
+            <button class="text_button" onclick="flowHandler(1)">NEXT</button>
+        </div>
+    </section>
+
+    <section id="js--scene2" class="scene2">
+        <figure><img src="img/shoot-out/central.png" alt="central room" class="bg_img2"></figure>
+        <figure onclick="flowHandler(1)"><img src="img/arrow_forward.png" alt="arrow forward" class="arrow_forward"></figure>
+        <p data-js="timer" class="timer_text_after"></p>
+        <div class="progress_bar">
+            <figure class="progress bar7"></figure>
+            <p class="progress_text">84%</p>
+        </div>
+    </section>
+
+    <section id="js--scene3" class="scene3">
+        <figure><img src="img/computer.png" alt="central computers" class="bg_img2"></figure>
+        <p data-js="timer" class="timer_text_after"></p>
+    </section>
+
+    <section id="js--scene4" class="scene4">
+        <figure><img src="img/computer.png" alt="central computers" class="bg_img2"></figure>
+        <figure class="text_blackscreen"></figure>
+        <figure><img src="img/mugshot.png" alt="mugshot" class="mugshot"></figure>
+        <div class="text_square_pos">
+            <figure class="text_square"></figure>
+            <p class="text_square_text">
+                I think this is it. Let’s see if I can get this old hunk of rust working.
+            </p>
+            <button class="text_button" onclick="flowHandler(1)">NEXT</button>
+        </div>
+    </section>
+
+    <section id="js--scene5" class="scene5">
+        <figure><img src="img/booting.png" alt="booting screen" class="bg_img2 fade_in op0"></figure>
+        <p data-js="timer" class="timer_text_after"></p>
+    </section>
+
+    <section id="js--scene6" class="scene6">
+        <figure><img src="img/booting.png" alt="booting screen" class="bg_img2"></figure>
+        <figure class="text_blackscreen"></figure>
+        <figure><img src="img/mugshot.png" alt="mugshot" class="mugshot"></figure>
+        <div class="text_square_pos">
+            <figure class="text_square"></figure>
+            <p id="js--text_block_1" class="text_square_text">
+                Come on can this thing go any faster?  ‘’пароль:’’ of course it needs a password. I guess I can’t go back and ask the captain. 
+                I have to work around it, maybe if I hack into the computer I can bypass the firewall. 
+            </p>
+            <button class="text_button" onclick="flowHandler(1)">NEXT</button>
+        </div>
+    </section>
+</body>
+</html>

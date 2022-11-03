@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/brieving.js" defer> </script>
+</head>
+<body>
+    <section class="locationInfo" id="js--locScene">
+        <p class="locAnimation">Agent: CLASSIFIED</p>
+        <p id="js--locP2" class="locNone">CIA undercover Operative</p>
+        <p id="js--locP3" class="locNone">KGB submarine - Atlantic Ocean</p>
+        <p id="js--locP4" class="locNone">January 15 - 1970  (The cold war)</p>
+    </section>
+
+    <section class="brieving" id="js--brievingScene">
+        <figure><img src="img/ventilastion_shaft1.png" alt="ventilastion shaft" class="bg_img2"></figure>
+        <figure><img src="img/brieving_note.png" alt="brieving note" class="brieving_note"></figure>
+        <button onclick="endBrieving()" class="brieving_button">END BRIEVING</button>
+    </section>
+
+    <section class="brieving_text" id="js--brievingTextScene">
+        <figure id="js--menu2"><img src="img/ventilastion_shaft1.png" alt="ventilastion shaft" class="bg_img2"></figure>
+        <figure class="text_blackscreen"></figure>
+        <figure><img src="img/mugshot.png" alt="mugshot" class="mugshot"></figure>
+        <div class="text_square_pos">
+            <figure class="text_square"></figure>
+            <p id="js--brieving_text_1" class="text_square_text">
+                By the sound of footsteps I’m clearly outnumbered. I have to be smart about this or I might not finish this mission. 
+                Dropping my chlorine cannister through the ventilation shaft should level the playing field. Good thing I brought my gasmask.
+            </p>
+
+            <button onclick="brieving_text1(1)" class="text_button">NEXT</button>
+        </div>
+    </section>
+
+    <section class="gas_scene" id="js--gas_scene">
+        <figure><img src="img/ventilastion_shaft3.png" alt="ventilastion shaft" class="bg_img2"></figure>
+        <figure onclick="brieving_text1(1)"><img src="img/ventilation_filter.png" alt="highlighted filter" class="obj__ventilation"></figure>
+    </section>
+
+    <section class="move_vent_scene" id="js--move_vent_scene">
+        <figure><img src="img/ventilastion_shaft2.png" alt="ventilastion shaft" class="bg_img2"></figure>
+        <figure onclick="brieving_text1(1)"><img src="img/arrow_left.png" alt="arrow left" class="arrow_left"></figure>
+        <p data-js="timer" class="timer_text_first">10:00</p>
+        <div class="progress_bar">
+            <figure class="progress bar1"></figure>
+            <p class="progress_text">0%</p>
+        </div>
+    </section>
+
+    <section class="door_vent_scene" id="js--door_vent_scene">
+        <figure><img src="img/door1.png" alt="The first door" class="bg_img3"></figure>
+        <figure onclick="brieving_text1(1)"><img src="img/arrow_forward.png" alt="arrow forward" class="arrow_forward"></figure>
+        <p data-js="timer" class="timer_text_after"></p>
+        <div class="progress_bar">
+            <figure class="progress bar2"></figure>
+            <p class="progress_text">12%</p>
+        </div>
+    </section>
+
+    <section class="infoRoom_reactor" id="js--infoRoom_reactor">
+        <p class="door_text">Nuclear Reactor</p>
+    </section>
+</body>
+</html>

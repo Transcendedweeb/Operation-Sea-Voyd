@@ -1,0 +1,496 @@
+/* Algemeen */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    background-color: black;
+    overflow: hidden;
+}
+
+.bg_img2{
+    position: fixed;
+    height: 100%;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: fill;
+}
+
+.text_blackscreen{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 85%;
+    top: 0;
+    left: 0;
+}
+
+.mugshot{
+    position: fixed;
+    height: auto;
+    width: 20%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text_square{
+    display: block;
+    border: solid 5px black;
+}
+
+.text_square_pos{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 65%;
+    background-color: white;
+    object-fit: cover;
+}
+
+.text_square_text{
+    position: fixed;
+    font-size: 3vh;
+    padding-left: 10px;
+}
+
+.text_button{
+    position: fixed;
+    font-size: 2vh;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5vh;
+    padding-right: 20vh;
+    padding-left: 20vh;
+    background-color: grey;
+    color: rgb(0, 0, 0);
+    border: solid 2px black;
+}
+
+.arrow_left{
+    position: fixed;
+    height: auto;
+    width: 15%;
+    top: 75%;
+    margin-left: 10%;
+}
+
+.arrow_forward{
+    position: fixed;
+    height: auto;
+    width: 5%;
+    top: 80%;
+    left: 60%;
+}
+
+.door_text{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0%;
+    font-size: 5vh;
+    text-shadow: 0 0 20px #ffffff;
+    animation: complete_fader 8s ease-out;
+}
+
+.timer_text_first{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: black;
+    color: green;
+    font-size: 5vh;
+    padding: 5px;
+    border: solid 2px white;
+    animation: time 5s ease-out;
+}
+
+.timer_text_after{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: black;
+    color: green;
+    font-size: 5vh;
+    padding: 5px;
+    border: solid 2px white;
+}
+/* --------------------------------------------------------- */
+
+/* screen */
+.scene2{
+    display: none;
+}
+
+.scene3{
+    display: none;
+}
+
+.scene4{
+    display: none;
+}
+
+.scene5{
+    display: none;
+}
+
+.scene6{
+    display: none;
+}
+
+.scene7{
+    display: none;
+}
+
+.scene8{
+    display: none;
+}
+
+.scene9{
+    display: none;
+}
+
+.scene10{
+    display: none;
+}
+
+.scene11{
+    display: none;
+}
+
+.scene12{
+    display: none;
+}
+
+.hacking{
+    position: fixed;
+    height: auto;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: blinking 2s infinite;
+}
+
+.wrapper{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 10%;
+}
+
+.wrapper2{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 20px;
+}
+
+.pc_file{
+    width: 100%;
+    height: auto;
+}
+
+.screen_text{
+    position: fixed;
+    width: 75%;
+    height: 90%;
+    left: 13%;
+    top: 20px;
+    font-size: 32px;
+}
+
+.app_title{
+    font-size: 7vh;
+    text-align: center;
+}
+
+.wrapper2 button{
+    width: 30%;
+    margin-left: 35%;
+    padding: 1%;
+    font-weight: bolder;
+}
+
+.btn_launch{
+    background-color: green;
+    border: solid 2px black;
+}
+
+.btn_stop{
+    background-color: red;
+    border: solid 2px black;
+}
+/* --------------------------------------------------------- */
+
+/* Ending */
+.text_ending{
+    position: fixed;
+    color: white;
+    width: 60%;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    font-size: 4vh;
+    text-shadow: 0 0 5px #ffffff;
+    animation: fade_in 3s ease-out 3s;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+}
+
+.btn_menu{
+    background-color: rgb(0, 225, 255);
+    position: fixed;
+    font-size: 2vh;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1vh;
+    padding-right: 10vh;
+    padding-left: 10vh;
+    border: solid 2px rgb(54, 54, 54);
+    animation: fade_in 3s ease-out 3s;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+}
+
+.text_final_good{
+    position: fixed;
+    bottom: 5px;
+    right: 10vh;
+    font-size: 10vh;
+    color: green;
+    animation: fade_in 3s ease-out;
+}
+
+.text_final_bad{
+    position: fixed;
+    bottom: 5px;
+    right: 10vh;
+    font-size: 10vh;
+    color: red;
+    animation: fade_in 3s ease-out;
+}
+/* --------------------------------------------------------- */
+
+@media only screen and (max-width:1500px){
+    .screen_text{
+        position: fixed;
+        width: 92%;
+        height: 80%;
+        left: 4%;
+        top: 20px;
+        font-size: 35px;
+    }
+
+    /* Ending */
+    .text_ending{
+        width: 80%;
+    }
+    /* --------------------------------------------------------- */
+}
+
+@media only screen and (max-width:1200px){
+    /* algemeen */ 
+    .arrow_forward{
+        width: 8%;
+    }
+    /* --------------------------------------------------------- */
+
+    .screen_text{
+        position: fixed;
+        width: 92%;
+        height: 80%;
+        left: 4%;
+        top: 20px;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    /* algemeen */ 
+    .arrow_left{
+        width: 40%;
+        top: 80%;
+        margin-left: 2%;
+    }
+
+    .arrow_forward{
+        width: 11%;
+    }
+    /* --------------------------------------------------------- */
+
+    .screen_text{
+        position: fixed;
+        width: 94%;
+        height: 80%;
+        left: 3%;
+        top: 20px;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width:600px){
+    /* algemeen */ 
+    .text_square_pos{
+        top: 45%;
+    }
+
+    .mugshot{
+        width: 35%;
+        top: 25%;
+    }
+
+    .text_button{
+        padding-right: 10vh;
+        padding-left: 10vh;
+    }
+
+    .arrow_left{
+        width: 45%;
+        top: 83%;
+        margin-left: 2%;
+    }
+
+    .arrow_forward{
+        width: 20%;
+        top: 80%;
+        left: 40%;
+    }
+
+    .door_text{
+        font-size: 30px;
+    }
+    /* --------------------------------------------------------- */
+
+    .screen_text{
+        font-size: 20px;
+    }
+
+    /* Ending */
+    .text_ending{
+        width: 90%;
+        top: 13%;
+        font-size: 3.5vh;
+    }
+
+    .btn_menu{
+        position: fixed;
+        font-size: 2.5vh;
+        bottom: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1vh;
+        padding-right: 10vh;
+        padding-left: 10vh;
+        border: solid 2px rgb(54, 54, 54);
+    }
+
+    .text_final_good{
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+        font-size: 10vh;
+        color: green;
+    }
+
+    .text_final_bad{
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+        font-size: 10vh;
+        color: red;
+    }
+    /* --------------------------------------------------------- */
+}
+
+@media only screen and (max-width:500px){
+    .text_ending{
+        width: 90%;
+        top: 13%;
+        font-size: 2.5vh;
+    }
+
+    .btn_menu{
+        position: fixed;
+        font-size: 2.5vh;
+        bottom: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1vh;
+        padding-right: 10vh;
+        padding-left: 10vh;
+        border: solid 2px rgb(54, 54, 54);
+    }
+
+    .text_final_good{
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+        font-size: 5vh;
+        color: green;
+    }
+
+    .text_final_bad{
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+        font-size: 5vh;
+        color: red;
+    }
+}
+
+@media only screen and (max-width:400px){
+    /* algemeen */
+    .mugshot{
+        width: 50%;
+        top: 30%;
+    }
+
+    .arrow_left{
+        width: 45%;
+        margin-left: 2%;
+    }
+    /* --------------------------------------------------------- */
+
+    .screen_text{
+        font-size: 18px;
+    } 
+}
+
+/* Animatie go BRRRRRRRRRRRRRRRR */
+@keyframes fade_in {
+    0%{
+		opacity: 0%;
+	}
+	100%{
+		opacity: 100%;
+	}
+}
+
+@keyframes blinking{
+    0%{
+		opacity: 0%;
+	}
+	50%{
+		opacity: 100%;
+	}
+    100%{
+		opacity: 0%;
+	}
+}
+/* --------------------------------------------------------- */

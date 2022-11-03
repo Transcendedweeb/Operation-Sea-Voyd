@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codelock</title>
+    <link rel="stylesheet" href="css/number-puzzle.css">
+    <script src="javascript/numberpuzzle.js" defer></script>
+</head>
+<body onload="runTime()">
+  <figure>
+    <img src="img/codekey.png" alt="codekey" class="bg">
+  </figure>
+  
+  <section id="js--scene1" class="scene1">
+    <div class="inputs">
+      <input type="number" id="box1" name="box1" min="1" max="9">
+      <input type="number" id="box2" name="box2" min="1" max="9">
+      <input type="number" id="box3" name="box3" min="1" max="9">
+      <input type="number" id="box4" name="box4" min="1" max="9">
+      <input type="number" id="box5" name="box5" min="1" max="9">
+      <input type="number" id="box6" name="box6" min="1" max="9">
+      <input type="number" id="box7" name="box7" min="1" max="9">
+      <input type="number" id="box8" name="box8" min="1" max="9">
+      <input type="number" id="box9" name="box9" min="1" max="9">
+    </div>
+
+    <button id="submit" onclick="checkvalues()">ENTER</button>
+    <button id="js--question" class="question" onclick="sceneHandler(2)">?</button>
+    <button id="verder" onclick="nextChapter()" type="button" disabled>OPEN</button>
+</section>
+
+<section id="js--scene2" class="scene2">
+  <figure class="text_blackscreen"></figure>
+  <figure><img src="img/mugshot.png" alt="mugshot" class="mugshot"></figure>
+  <div class="text_square_pos">
+      <figure class="text_square"></figure>
+      <p id="js--text_block_1" class="text_square_text">
+        What did the words on the wall say again?. Fifteen and horizontal, the code must add up to fifteen on the horizontal lines. 
+        Looking at this code lock I can only put in numbers between 1 and 9 and it has to be unique. It all makes sense now, every horizontal 
+        line should add up to 15 with unique numbers. I got this!
+      </p>
+
+      <button class="text_button" onclick="sceneHandler(1)">NEXT</button>
+  </div>
+</section>
+
+<div class="progress_bar">
+  <figure class="progress bar5"></figure>
+  <p class="progress_text">44%</p>
+</div>
+<p data-js="timer" class="timer_text_after"></p>
+
+</body>
+</html>

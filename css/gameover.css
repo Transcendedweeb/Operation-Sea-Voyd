@@ -1,0 +1,123 @@
+/* Algemeen */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    background-color: black;
+    overflow: hidden;
+}
+/* --------------------------------------------------------- */
+
+/* Game Over */
+ul{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 35%;
+    left: 46.5%;
+    transform: translate(-50%, -50%);
+    list-style-type: none;
+    gap: 8vh;
+}
+
+p{
+    position: fixed;
+    font-family: 'Creepster', cursive;
+    color: red;
+    font-size: 16vh;
+    opacity: 0%;
+}
+
+.space{
+    margin-left: 5vh;
+    
+}
+
+.E{
+    margin-left: 3vh;
+}
+
+button{
+    position: fixed;
+    font-size: 2vh;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1vh;
+    padding-right: 10vh;
+    padding-left: 10vh;
+    background-color: red;
+    color: rgb(0, 0, 0);
+    border: solid 2px rgb(54, 54, 54);
+}
+/* --------------------------------------------------------- */
+
+/* Letters fader handler */
+.L1{
+    animation: fade_in 4s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.L2{
+    animation: fade_in 4s ease-out .5s;
+    animation-fill-mode: forwards;
+}
+
+.L3{
+    animation: fade_in 4s ease-out 1s;
+    animation-fill-mode: forwards;
+}
+
+.L4{
+    animation: fade_in 4s ease-out 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.L5{
+    animation: fade_in 4s ease-out 2s;
+    animation-fill-mode: forwards;
+}
+
+.L6{
+    animation: fade_in 4s ease-out 2.5s;
+    animation-fill-mode: forwards;
+}
+
+.L7{
+    animation: fade_in 4s ease-out 3s;
+    animation-fill-mode: forwards;
+}
+
+.L8{
+    animation: fade_in 4s ease-out 3.5s;
+    animation-fill-mode: forwards;
+}
+/* --------------------------------------------------------- */
+
+@media only screen and (max-width:600px){
+    ul{
+        left: 43%;
+        gap: 40px;
+    }
+
+    p{
+        font-size: 70px;
+    }
+
+    .E{
+        margin-left: 1.5vh;
+    }
+}
+
+/* Animatie go BRRRRRRRRRRRRRRRR */
+@keyframes fade_in {
+    0%{
+		opacity: 0%;
+	}
+	100%{
+		opacity: 100%;
+	}
+}
+/* --------------------------------------------------------- */

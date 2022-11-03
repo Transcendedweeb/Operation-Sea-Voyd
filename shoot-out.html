@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoot-out</title>
+    <link rel="stylesheet" href="css/shootout.css">
+    <script src="javascript/shootout.js" defer> </script>
+</head>
+<body id="js--body" onload="runTime()">
+    <section class="shoot_out" id="js--MiniGame_shootOut">
+        <figure id="js--menu2"><img src="img/shoot-out/central.png" alt="dark sea bg image" class="bg_img2"></figure>
+        <figure><img src="img/shoot-out/pistol_hold.png" class="sprite_gun" id="js--gun" alt="gun"></figure>
+
+        <p id="js--ammo1" class="ammo">6 / 6</p>
+
+        <div class="spawn_loc">
+            <figure id="js--sp1" data-obj="spawn" class="obj_spawner sp1"><img src="img/shoot-out/soldier.png" class="obj_enemy" onclick="shotHandler(1)" alt="Soviet crew"></figure>
+            <figure id="js--sp2" data-obj="spawn" class="obj_spawner sp2"><img src="img/shoot-out/soldier.png" class="obj_enemy" onclick="shotHandler(2)" alt="Soviet crew"></figure>
+            <figure id="js--sp3" data-obj="spawn" class="obj_spawner sp3"><img src="img/shoot-out/soldier.png" class="obj_enemy" onclick="shotHandler(3)" alt="Soviet crew"></figure>
+            <figure id="js--sp4" data-obj="spawn" class="obj_spawner sp4"><img src="img/shoot-out/soldier.png" class="obj_enemy" onclick="shotHandler(4)" alt="Soviet crew"></figure>
+        </div>
+
+        <div class="progress_bar">
+            <figure class="progress bar6"></figure>
+            <p class="progress_text">64%</p>
+        </div>
+        <p data-js="timer" class="timer_text_after"></p>
+        <figure class="eff_blood" id="js--blood"></figure>
+    </section>
+</body>
+</html>

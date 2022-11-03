@@ -1,0 +1,468 @@
+/* Algemeen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg_img2{
+    position: fixed;
+    height: 100%;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: fill;
+}
+
+.text_blackscreen{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 85%;
+    top: 0;
+    left: 0;
+}
+
+.mugshot{
+    position: fixed;
+    height: auto;
+    width: 20%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text_square{
+    display: block;
+    border: solid 5px black;
+}
+
+.text_square_pos{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 65%;
+    background-color: white;
+    object-fit: cover;
+}
+
+.text_square_text{
+    position: fixed;
+    font-size: 3vh;
+    padding-left: 10px;
+}
+
+.text_button{
+    position: fixed;
+    font-size: 2vh;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5vh;
+    padding-right: 20vh;
+    padding-left: 20vh;
+    background-color: grey;
+    color: rgb(0, 0, 0);
+    border: solid 2px black;
+}
+
+.arrow_left{
+    position: fixed;
+    height: auto;
+    width: 15%;
+    top: 75%;
+    margin-left: 10%;
+}
+
+.arrow_forward{
+    position: fixed;
+    height: auto;
+    width: 5%;
+    top: 80%;
+    left: 60%;
+}
+
+.door_text{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0%;
+    font-size: 5vh;
+    text-shadow: 0 0 20px #ffffff;
+    animation: complete_fader 8s ease-out;
+}
+
+.timer_text_first{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: black;
+    color: green;
+    font-size: 5vh;
+    padding: 5px;
+    border: solid 2px white;
+    animation: time 5s ease-out;
+}
+
+.timer_text_after{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: black;
+    color: green;
+    font-size: 5vh;
+    padding: 5px;
+    border: solid 2px white;
+}
+
+.progress_bar{
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    top: 0%;
+    right: 0%;
+    width: 50%;
+    height: auto;
+    border: solid black 1px;
+    background-color: white;
+}
+
+.progress{
+    background-color: green;
+    height: 1vh;
+    width: 0%;
+    border: solid black 1px;
+    margin: 1vh;   
+}
+
+.progress_text{
+    font-size: 3vh;
+    color: green;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.bar5{
+    width: 44%;
+}
+/* --------------------------------------------------------- */
+
+/* puzzel */
+body{
+    background-color: black;
+    overflow: hidden;
+}
+
+.bg {
+    position: fixed;
+    height: 100%;
+    width: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input{
+    width: 90%;
+    height: 90%;
+    box-sizing: border-box;
+    font-size: 6vh;
+    text-align: center;
+    padding: 5px;
+    top: 49%;
+    left: 35%;
+    margin-top: 5px;
+}
+
+.inputs {
+    position: fixed;
+    top: 46%;
+    left: 29%;
+    display: grid;
+    grid-template-columns:  33.3% 33.3% 33.3%;
+    justify-items: center;
+    background-color: black;
+    width: 25%;
+    height: 45%;
+}
+
+#submit {
+    position: fixed;
+    width: 5rem;
+    height: 5rem;
+    bottom: 5%;
+    top: 33.5%;
+    left: 35%;
+}
+
+#verder {
+    position: fixed;
+    width: 5rem;
+    height: 5rem;
+    bottom: 5%;
+    top: 33.5%;
+    left: 45%;
+}
+
+.question{
+    position: fixed;
+    width: 5rem;
+    height: 5rem;
+    bottom: 5%;
+    top: 33.5%;
+    left: 40%;
+    font-size: 5vh;
+}
+
+.scene2{
+    display: none;
+}
+
+/* --------------------------------------------------------- */
+
+@media only screen and (max-width:1700px){
+    .inputs {
+        left: 29%;
+        width: 25%;
+        height: 42%;
+    }
+
+    #submit{
+        left: 30%;
+    }
+    
+    #verder{
+        left: 44%;
+    }
+
+    .question{
+        left: 37%;
+    }
+}
+
+@media only screen and (max-width:1400px){
+    .bg {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .inputs {
+        top: 44%;
+        left: 20%;
+        width: 35%;
+        height: 45%;
+    }
+
+    #submit{
+        top: 33.5%;
+        left: 28%;
+    }
+    
+    #verder{
+        top: 33.5%;
+        left: 42%;
+    }
+
+    .question{
+        top: 33.5%;
+        left: 35%;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    #submit{
+        top: 34%;
+        left: 25%;
+    }
+    
+    #verder{
+        top: 34%;
+        left: 45%;
+    }
+
+    .question{
+        top: 34%;
+        left: 35%;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    /* algemeen */ 
+    .arrow_left{
+        width: 40%;
+        top: 80%;
+        margin-left: 2%;
+    }
+
+    .arrow_forward{
+        width: 11%;
+    }
+    /* --------------------------------------------------------- */
+    
+    .bg {
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+    }
+
+    .inputs {
+        top: 45%;
+        left: 28%;
+        width: 40%;
+        height: 45%;
+    }
+
+    #submit{
+        top: 31%;
+        left: 35%;
+    }
+    
+    #verder{
+        top: 31%;
+        left: 55%;
+    }
+
+    .question{
+        top: 31%;
+        left: 45%;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .bg {
+        left: 78%;
+    }
+    
+    .inputs {
+        left: 40%;
+        width: 45%;
+    }
+
+    #submit{
+        top: 31%;
+        left: 48%;
+    }
+    
+    #verder{
+        top: 31%;
+        left: 73%;
+    }
+
+    .question{
+        top: 31%;
+        left: 60.5%;
+    }
+}
+
+@media only screen and (max-width:600px){
+    /* algemeen */ 
+    .text_square_pos{
+        top: 45%;
+    }
+
+    .mugshot{
+        width: 35%;
+        top: 25%;
+    }
+
+    .text_button{
+        padding-right: 10vh;
+        padding-left: 10vh;
+    }
+
+    .arrow_left{
+        width: 45%;
+        top: 83%;
+        margin-left: 2%;
+    }
+
+    .arrow_forward{
+        width: 20%;
+        top: 80%;
+        left: 40%;
+    }
+
+    .door_text{
+        font-size: 30px;
+    }
+    /* --------------------------------------------------------- */
+
+    .inputs {
+        top: 45%;
+        left: 10%;
+        width: 75%;
+    }
+
+    #submit{
+        top: 31%;
+        left: 40%;
+    }
+    
+    #verder{
+        top: 31%;
+        left: 70%;
+    }
+
+    .question{
+        top: 31%;
+        left: 55%;
+    }
+}
+
+@media only screen and (max-width:500px){
+    #submit{
+        left: 35%;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    #verder{
+        width: 4rem;
+        height: 4rem;
+    }
+
+
+    .question{
+        left: 52.5%;
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+@media only screen and (max-width:400px){
+    /* algemeen */
+    .mugshot{
+        width: 50%;
+        top: 30%;
+    }
+
+    .arrow_left{
+        width: 45%;
+        margin-left: 2%;
+    }
+    /* --------------------------------------------------------- */
+
+    .bg {
+        left: 70%;
+    }
+
+    #submit{
+        top: 31%;
+        left: 15%;
+    }
+    
+    #verder{
+        top: 31%;
+        left: 60%;
+    }
+
+    .question{
+        top: 31%;
+        left: 38%;
+    }
+}

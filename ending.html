@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final</title>
+    <link rel="stylesheet" href="css/ending.css">
+    <script src="javascript/ending.js" defer></script>
+</head>
+<body onload="flowHandler(1)">
+    <section id="js--scene1" class="scene1">
+        <figure><img src="img/screen.png" alt="pc screen" class="bg_img2"></figure>
+        <figure><img src="img/hacking.png" alt="hacking completed" class="hacking"></figure>
+    </section>
+
+    <section id="js--scene2" class="scene2">
+        <figure><img src="img/screen.png" alt="pc screen" class="bg_img2"></figure>
+        <figure class="text_blackscreen"></figure>
+        <figure><img src="img/mugshot.png" alt="mugshot" class="mugshot"></figure>
+        <div class="text_square_pos">
+            <figure class="text_square"></figure>
+            <p class="text_square_text">
+                I found the program to cancel the launch but I think I may have found something else too..? 
+                Whatever information it holds it must be important for it to be placed next to the program. 
+            </p>
+            <button class="text_button" onclick="flowHandler(1)">NEXT</button>
+        </div>
+    </section>
+
+    <section id="js--scene3" class="scene3">
+        <figure><img src="img/screen.png" alt="pc screen" class="bg_img2"></figure>
+        <div class="wrapper">
+            <figure><img src="img/file.png" alt="text file" class="pc_file" onclick="flowHandler(2)"></figure>
+            <figure><img src="img/exe.png" alt="exe file" class="pc_file" onclick="flowHandler(1)"></figure>
+        </div>
+    </section>
+
+    <section id="js--scene4" class="scene4">
+        <figure><img src="img/screen.png" alt="pcscreen" class="bg_img2"></figure>
+        <figure class="text_blackscreen"></figure>
+        <figure><img src="img/mugshot.png" alt="mugshot" class="mugshot"></figure>
+        <div class="text_square_pos">
+            <figure class="text_square"></figure>
+            <p class="text_square_text">
+                The suspicious file might contain some important information. I still have time before the launch.
+            </p>
+            <button class="text_button" onclick="flowHandler(-1)">NEXT</button>
+        </div>
+    </section>
+
+    <section id="js--scene5" class="scene5">
+        <figure><img src="img/screen.png" alt="pc screen" class="bg_img2"></figure>
+        <p class="screen_text">
+            Vodyanoyza was first spotted by the scientist working for the KGB. It’s origins are unknown. The length of 
+            Vodyanoyza is estimated to be 120 meters. It’s whereabouts has been located deep in the Atlantic ocean. We have been closely 
+            monitoring the apex predator Vodyanoyza, now slowly heading towards West-Europe. Scientist have tracked the roots of Vodyanoyza 
+            back to a Slavic mythology of a evil water spirit called the vodyanoy. Capable of destroying the world the KGB has started the production of 
+            чудовище missiles, a newly engineered missiles named ‘’Monster’’ strong enough to destroy whole continents. The KGB has chosen to keep this a 
+            secret to prevent panic outbreaks and keep everything under control. It has been confirmed that Vodyanoyza is non friendly and destroys anything 
+            in it’s path. Scientists are convinced that this apex predator has been asleep for billions of years and has now been awoken due to unknown factors. 
+            We were able to read off the vital signs and learn that Vodyanoyza is still in his ‘’sleep mode’’ and that this is our only chance to kill it. 
+        </p>
+        <button class="text_button" onclick="flowHandler(1)">NEXT</button>
+    </section>
+
+    <section id="js--scene6" class="scene6">
+        <figure><img src="img/screen.png" alt="pc screen" class="bg_img2"></figure>
+        <figure class="text_blackscreen"></figure>
+        <figure><img src="img/mugshot.png" alt="mugshot" class="mugshot"></figure>
+        <div class="text_square_pos">
+            <figure class="text_square"></figure>
+            <p class="text_square_text">
+                What..? I don’t get it….Vodyanoyza? This can’t be real. Everything I did, everything I accomplished, everybody that I killed was for me to 
+                stop the missiles, to finish this mission. If I stop the launch Vodyanoyza will reach Europe and destroy everything in its path. If I launch the 
+                missiles it could save the world from this apex predator, but trigger another world war. The future of the world is in my hands now. 
+            </p>
+            <button class="text_button" onclick="flowHandler(1)">NEXT</button>
+        </div>
+    </section>
+
+    <section id="js--scene7" class="scene7">
+        <figure><img src="img/screen.png" alt="pc screen" class="bg_img2"></figure>
+        <div class="wrapper">
+            <figure><img src="img/file.png" alt="text file" class="pc_file" onclick="flowHandler(-2)"></figure>
+            <figure><img src="img/exe.png" alt="exe file" class="pc_file" onclick="flowHandler(1)"></figure>
+        </div>
+    </section>
+
+    <section id="js--scene8" class="scene8">
+        <figure><img src="img/screen.png" alt="pc screen" class="bg_img2"></figure>
+        <div class="wrapper2">
+            <h1 class="app_title">LAUNCH ROCKETS?</h1>
+            <button class="btn_launch" onclick="flowHandler(1)">EARLY LAUNCH</button>
+            <button class="btn_stop" onclick="flowHandler(3)">STOP LAUNCH</button>
+        </div>
+    </section>
+    
+    <section id="js--scene9" class="scene9">
+        <figure><img src="img/screen.png" alt="pc screen" class="bg_img2"></figure>
+        <figure class="text_blackscreen"></figure>
+        <figure><img src="img/mugshot.png" alt="mugshot" class="mugshot"></figure>
+        <div class="text_square_pos">
+            <figure class="text_square"></figure>
+            <p class="text_square_text">
+                I can’t sit back and let this monster consume the world. Goodbye Vodyanoyza.
+            </p>
+            <button class="text_button" onclick="flowHandler(1)">NEXT</button>
+        </div>
+    </section>
+
+    <section id="js--scene10" class="scene10">
+        <p class="text_ending">
+            The missile explosion was so grand it took your life with it… You may have taken down a monster but by not telling 
+            the world it started another world war and many lives have been lost. The USA saw the missile launch as an attack on t
+            heir nation and declared war. 
+        </p>
+        <button class="btn_menu" onclick="toMenu()">TO MENU</button>
+        <p class="text_final_bad">BAD END</p>
+    </section>
+
+    <section id="js--scene11" class="scene11">
+        <figure><img src="img/screen.png" alt="pc screen" class="bg_img2"></figure>
+        <figure class="text_blackscreen"></figure>
+        <figure><img src="img/mugshot.png" alt="mugshot" class="mugshot"></figure>
+        <div class="text_square_pos">
+            <figure class="text_square"></figure>
+            <p class="text_square_text">
+                I can’t just fire these missiles, I need to go back with what I found and show this to the world. 
+                I can prevent another world war and this attack from Vodyanoyza from happening. Pressing ‘’Stop launch’’ now!
+            </p>
+            <button class="text_button" onclick="flowHandler(1)">NEXT</button>
+        </div>
+    </section>
+
+    <section id="js--scene12" class="scene12">
+        <p class="text_ending">
+            Everything that you found, you took back to the United States and showed it to the world. Instead of mass hysteria, 
+            leaders all around the world started working together to take down the real enemy. The first missile launch against Vodyanoyza 
+            was successful and the apex predator was taken down. Not only did you prevent another world war from happening but you also 
+            stopped Vodyanoyza from destroying the world. 
+        </p>
+        <button class="btn_menu" onclick="toMenu()">TO MENU</button>
+        <p class="text_final_good">GOOD END</p>
+    </section>
+</body>
+</html>

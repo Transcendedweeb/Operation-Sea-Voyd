@@ -1,0 +1,405 @@
+/* Algemeen */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    background-color: black;
+    overflow: hidden;
+}
+
+.bg_img2{
+    position: fixed;
+    height: 100%;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: fill;
+}
+
+.text_blackscreen{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 85%;
+    top: 0;
+    left: 0;
+}
+
+.mugshot{
+    position: fixed;
+    height: auto;
+    width: 20%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text_square{
+    display: block;
+    border: solid 5px black;
+}
+
+.text_square_pos{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 65%;
+    background-color: white;
+    object-fit: cover;
+}
+
+.text_square_text{
+    position: fixed;
+    font-size: 3vh;
+    padding-left: 10px;
+}
+
+.text_button{
+    position: fixed;
+    font-size: 2vh;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5vh;
+    padding-right: 20vh;
+    padding-left: 20vh;
+    background-color: grey;
+    color: rgb(0, 0, 0);
+    border: solid 2px black;
+}
+
+.arrow_left{
+    position: fixed;
+    height: auto;
+    width: 15%;
+    top: 75%;
+    margin-left: 10%;
+}
+
+.arrow_forward{
+    position: fixed;
+    height: auto;
+    width: 5%;
+    top: 80%;
+    left: 60%;
+}
+
+.door_text{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0%;
+    font-size: 5vh;
+    text-shadow: 0 0 20px #ffffff;
+    animation: complete_fader 8s ease-out;
+}
+
+.timer_text_first{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: black;
+    color: green;
+    font-size: 5vh;
+    padding: 5px;
+    border: solid 2px white;
+    animation: time 5s ease-out;
+}
+
+.timer_text_after{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: black;
+    color: green;
+    font-size: 5vh;
+    padding: 5px;
+    border: solid 2px white;
+}
+
+.progress_bar{
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    top: 0%;
+    right: 0%;
+    width: 50%;
+    height: auto;
+    border: solid black 1px;
+    background-color: white;
+}
+
+.progress{
+    background-color: green;
+    height: 1vh;
+    width: 0%;
+    border: solid black 1px;
+    margin: 1vh;   
+}
+
+.progress_text{
+    font-size: 3vh;
+    color: green;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.bar3{
+    width: 20%;
+}
+
+.bar4{
+    width: 32%;
+}
+/* --------------------------------------------------------- */
+
+/* nuclear reactor */
+.scene2{
+    display: none;
+}
+
+.scene3{
+    display: none;
+}
+
+.scene4{
+    display: none;
+}
+
+.scene5{
+    display: none;
+}
+
+.scene6{
+    display: none;
+}
+
+.scene7{
+    display: none;
+}
+
+.bg_img3{
+    position: fixed;
+    height: 100%;
+    width: auto;
+    top: 0%;
+    left: 5%;
+    object-fit: fill;
+}
+
+.bg_vibrate{
+    left: 6%;
+    top: 0%;
+    animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+}
+/* --------------------------------------------------------- */
+
+/* Central */
+.fade_out{
+    opacity: 0%;
+    animation: fade_out 2s ease-out;
+}
+
+.eff_blood{
+    position: fixed;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0%;
+    animation: fade_out 2s ease-out;
+}
+
+.door_text{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0%;
+    font-size: 5vh;
+    text-shadow: 0 0 20px #ffffff;
+    animation: complete_fader 8s ease-out;
+}
+/* --------------------------------------------------------- */
+
+@media only screen and (max-width:1200px){
+    /* algemeen */ 
+    .arrow_forward{
+        width: 8%;
+    }
+    /* --------------------------------------------------------- */
+
+    /* reactor */
+    .bg_img2{
+        left: 40%;;
+    }
+
+    .bg_img3{
+        left: 0%;
+    }
+    /* --------------------------------------------------------- */
+}
+
+@media only screen and (max-width:1000px){
+    /* algemeen */ 
+    .arrow_left{
+        width: 40%;
+        top: 80%;
+        margin-left: 2%;
+    }
+
+    .arrow_forward{
+        width: 11%;
+    }
+    /* --------------------------------------------------------- */
+
+    /* reactor */
+    .bg_img2{
+        left: 35%;;
+    }
+    /* --------------------------------------------------------- */
+}
+
+@media only screen and (max-width:800px){
+    /* reactor */
+    .bg_img2{
+        left: 30%;;
+    }
+
+    .bg_img3{
+        top: 0%;
+        left: -50%;
+        transform: translate(0%, 0%);
+    }
+
+    .bg_vibrate{
+        left: -50%;
+    }
+    /* --------------------------------------------------------- */
+}
+
+@media only screen and (max-width:600px){
+    /* algemeen */ 
+    .text_square_pos{
+        top: 45%;
+    }
+
+    .mugshot{
+        width: 35%;
+        top: 25%;
+    }
+
+    .text_button{
+        padding-right: 10vh;
+        padding-left: 10vh;
+    }
+
+    .arrow_left{
+        width: 45%;
+        top: 83%;
+        margin-left: 2%;
+    }
+
+    .arrow_forward{
+        width: 20%;
+        top: 80%;
+        left: 40%;
+    }
+
+    .door_text{
+        font-size: 30px;
+    }
+    /* --------------------------------------------------------- */
+
+    /* reactor */
+    .bg_img2{
+        left: 5%;;
+    }
+
+    .bg_img3{
+        top: 0%;
+        left: -75%;
+        transform: translate(0%, 0%);
+    }
+
+    .bg_vibrate{
+        left: -75%;
+    }
+    /* --------------------------------------------------------- */
+}
+
+@media only screen and (max-width:400px){
+    /* algemeen */
+    .mugshot{
+        width: 50%;
+        top: 30%;
+    }
+
+    .arrow_left{
+        width: 45%;
+        margin-left: 2%;
+    }
+    /* --------------------------------------------------------- */
+
+    /* reactor */
+    .bg_img3{
+        top: 0%;
+        left: -120%;
+        transform: translate(0%, 0%);
+    }
+
+    .bg_vibrate{
+        left: -120%;
+    }
+    /* --------------------------------------------------------- */
+}
+
+
+/* Animatie go BRRRRRRRRRRRRRRRR */
+@keyframes complete_fader{
+	0%{
+		opacity: 0%;
+	}
+    10%{
+        opacity: 0%;
+    }
+	55%{
+		opacity: 100%;
+	}
+    100%{
+        opacity: 0%;
+    }
+}
+
+@keyframes shake{
+    10%, 90% {
+        transform: translate3d(-10px, 0, 0);
+    }
+    20%, 80% {
+        transform: translate3d(13px, 0, 0);
+    }
+    30%, 50%, 70% {
+        transform: translate3d(-17px, 0, 0);
+    }
+    40%, 60% {
+        transform: translate3d(17px, 0, 0);
+    }
+}
+
+@keyframes fade_out {
+    0%{
+		opacity: 100%;
+	}
+	100%{
+		opacity: 0%;
+	}
+}
+/* --------------------------------------------------------- */
